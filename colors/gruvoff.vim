@@ -4,7 +4,7 @@
 " License:    The MIT License (MIT)
 "
 " A lighter gruvbox theme with most of the syntax off. Structure of this
-" file is copied from vim-colors-off theme:
+" file is copied from the vim-colors-off theme:
 "
 " https://github.com/pbrisbin/vim-colors-off
 "
@@ -131,7 +131,7 @@ hi! link Debug            Special
 
 call s:h("Underlined",            {"fg": s:norm, "gui": "underline", "cterm": "underline"})
 call s:h("Ignore",                {"fg": s:bg})
-call s:h("Error",                 {"fg": s:actual_white, "bg": s:red, "cterm": "bold"})
+call s:h("Error",                 {"fg": s:actual_white, "bg": s:light_red, "cterm": "bold"})
 call s:h("Todo",                  {"fg": s:actual_white, "gui": "bold", "cterm": "bold"})
 call s:h("SpecialKey",            {"fg": s:light_green})
 call s:h("NonText",               {"fg": s:light_black})
@@ -143,7 +143,7 @@ call s:h("MoreMsg",               {"fg": s:light_gray, "cterm": "bold", "gui": "
 hi! link ModeMsg MoreMsg
 call s:h("LineNr",                {"fg": s:bg_very_subtle})
 call s:h("CursorLineNr",          {"fg": s:light_yellow, "bg": s:bg_subtle})
-call s:h("Question",              {"fg": s:red})
+call s:h("Question",              {"fg": s:light_red})
 call s:h("StatusLine",            {"bg": s:bg_subtle, "fg": s:light_gray})
 call s:h("StatusLinePrefix",      {"bg": s:white, "fg": s:medium_gray})
 call s:h("StatusLineNC",          {"bg": s:bg, "fg": s:medium_gray})
@@ -156,8 +156,8 @@ call s:h("WarningMsg",            {"fg": s:red})
 call s:h("WildMenu",              {"fg": s:bg, "bg": s:norm})
 call s:h("Folded",                {"fg": s:medium_gray})
 call s:h("FoldColumn",            {"fg": s:bg_subtle})
-call s:h("DiffAdd",               {"fg": s:green})
-call s:h("DiffDelete",            {"fg": s:red})
+call s:h("DiffAdd",               {"fg": s:light_green})
+call s:h("DiffDelete",            {"fg": s:light_red})
 call s:h("DiffChange",            {"fg": s:dark_yellow})
 call s:h("DiffText",              {"fg": s:dark_blue})
 call s:h("SignColumn",            {"fg": s:light_green})
@@ -195,14 +195,11 @@ call s:h("htmlH4",                {"bg": s:bg, "fg": s:norm})
 call s:h("htmlH5",                {"bg": s:bg, "fg": s:norm})
 call s:h("htmlH6",                {"bg": s:bg, "fg": s:norm})
 
-hi link diffRemoved       DiffDelete
-hi link diffAdded         DiffAdd
+hi link diffRemoved                DiffDelete
+hi link diffAdded                  DiffAdd
 
-" Signify, git-gutter
-hi link SignifySignAdd              LineNr
-hi link SignifySignDelete           LineNr
-hi link SignifySignChange           LineNr
-hi link GitGutterAdd                LineNr
-hi link GitGutterDelete             LineNr
-hi link GitGutterChange             LineNr
-hi link GitGutterChangeDelete       LineNr
+" git-gutter
+call s:h("GitGutterAdd",          {"bg": s:bg, "fg": s:light_green})
+call s:h("GitGutterDelete",       {"bg": s:bg, "fg": s:light_red})
+call s:h("GitGutterChange",       {"bg": s:bg, "fg": s:light_blue})
+call s:h("GitGutterChangeDelete", {"bg": s:bg, "fg": s:light_cyan})
