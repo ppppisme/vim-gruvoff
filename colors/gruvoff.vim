@@ -1,7 +1,7 @@
 " Name:       gruvoff.vim
 " Version:    0.1
 " Maintainer: github.com/vladgor
-" License:    The MIT License (MIT)
+" License:    GNU General Public License  (GPLv3)
 "
 " A lighter gruvbox theme with most of the syntax off. Structure of this
 " file is copied from the vim-colors-off theme:
