@@ -131,6 +131,7 @@ call s:h("Directory",             {"fg": s:fg_subtle, "cterm": "bold"})
 call s:h("IncSearch",             {"bg": s:bg_subtle})
 call s:h("Search",                {"bg": s:bg_subtle, "fg": s:fg})
 
+call s:h("SpecialKey",            {"fg": s:fg_subtle, "gui": "italic", "cterm": "italic"})
 call s:h("MoreMsg",               {"fg": s:fg_subtle, "cterm": "bold", "gui": "bold"})
 hi! link ModeMsg MoreMsg
 
