@@ -135,7 +135,7 @@ call s:h("MoreMsg",               {"fg": s:fg_subtle, "cterm": "bold", "gui": "b
 hi! link ModeMsg MoreMsg
 
 call s:h("LineNr",                {"fg": s:bg_subtle, "cterm": "bold", "gui": "bold"})
-call s:h("CursorLineNr",          {"fg": s:fg, "bg": s:bg_subtle, "cterm": "bold", "gui": "bold"})
+call s:h("CursorLineNr",          {"fg": s:fg_subtle, "bg": s:bg_subtle, "cterm": "bold", "gui": "bold"})
 
 call s:h("StatusLine",            {"bg": s:bg_subtle, "fg": s:fg_subtle})
 call s:h("StatusLinePrefix",      {"bg": s:white, "fg": s:bg_subtle})
