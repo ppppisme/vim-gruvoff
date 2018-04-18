@@ -125,7 +125,7 @@ call s:h("Ignore",                {"fg": s:bg_subtle})
 call s:h("Error",                 {"fg": s:fg, "bg": s:error, "cterm": "bold", "gui": "bold"})
 call s:h("Todo",                  {"fg": s:fg, "gui": "bold", "cterm": "bold"})
 
-call s:h("NonText",               {"fg": s:bg_subtle})
+call s:h("NonText",               {"fg": s:bg_subtle, "gui": "bold", "cterm": "bold"})
 call s:h("Directory",             {"fg": s:fg_subtle, "cterm": "bold"})
 
 call s:h("IncSearch",             {"bg": s:bg_subtle})
@@ -150,7 +150,7 @@ call s:h("Title",                 {"fg": s:accent})
 call s:h("Visual",                {"bg": s:bg_subtle})
 call s:h("VisualNOS",             {"bg": s:bg_subtle})
 
-call s:h("Question",              {"fg": s:question})
+call s:h("Question",              {"fg": s:fg_subtle, "cterm": "italic", "gui": "italic"})
 call s:h("ErrorMsg",              {"fg": s:error})
 call s:h("WarningMsg",            {"fg": s:warning})
 
