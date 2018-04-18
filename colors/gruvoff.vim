@@ -122,11 +122,11 @@ call s:h("Underlined",            {"fg": s:fg, "gui": "underline", "cterm": "und
 
 call s:h("Ignore",                {"fg": s:bg_subtle})
 
-call s:h("Error",                 {"fg": s:fg, "bg": s:error, "cterm": "bold"})
+call s:h("Error",                 {"fg": s:fg, "bg": s:error, "cterm": "bold", "gui": "bold"})
 call s:h("Todo",                  {"fg": s:fg, "gui": "bold", "cterm": "bold"})
 
 call s:h("NonText",               {"fg": s:bg_subtle})
-call s:h("Directory",             {"fg": s:accent})
+call s:h("Directory",             {"fg": s:fg_subtle, "cterm": "bold"})
 
 call s:h("IncSearch",             {"bg": s:bg_subtle})
 call s:h("Search",                {"bg": s:bg_subtle, "fg": s:fg})
@@ -134,8 +134,8 @@ call s:h("Search",                {"bg": s:bg_subtle, "fg": s:fg})
 call s:h("MoreMsg",               {"fg": s:fg_subtle, "cterm": "bold", "gui": "bold"})
 hi! link ModeMsg MoreMsg
 
-call s:h("LineNr",                {"fg": s:bg_subtle, "cterm": "bold"})
-call s:h("CursorLineNr",          {"fg": s:fg, "bg": s:bg_subtle, "cterm": "bold"})
+call s:h("LineNr",                {"fg": s:bg_subtle, "cterm": "bold", "gui": "bold"})
+call s:h("CursorLineNr",          {"fg": s:fg, "bg": s:bg_subtle, "cterm": "bold", "gui": "bold"})
 
 call s:h("StatusLine",            {"bg": s:bg_subtle, "fg": s:fg_subtle})
 call s:h("StatusLinePrefix",      {"bg": s:white, "fg": s:bg_subtle})
@@ -164,7 +164,7 @@ call s:h("PmenuSbar",             {"fg": s:fg, "bg": s:bg_subtle})
 call s:h("PmenuThumb",            {"fg": s:fg, "bg": s:bg_subtle})
 
 call s:h("TabLine",               {"fg": s:fg, "bg": s:bg_subtle})
-call s:h("TabLineSel",            {"fg": s:accent, "bg": s:bg_subtle, "gui": "bold", "cterm": "bold"})
+call s:h("TabLineSel",            {"fg": s:fg, "bg": s:bg_subtle, "gui": "bold", "cterm": "bold"})
 call s:h("TabLineFill",           {"fg": s:fg, "bg": s:bg_subtle})
 
 call s:h("CursorColumn",          {"bg": s:bg_subtle})
@@ -185,6 +185,13 @@ call s:h("SignColumn",            {"fg": s:fg})
 
 hi link diffRemoved               DiffDelete
 hi link diffAdded                 DiffAdd
+
+call s:h("htmlH1",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
+call s:h("htmlH2",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
+call s:h("htmlH3",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
+call s:h("htmlH4",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
+call s:h("htmlH5",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
+call s:h("htmlH6",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
 
 " git-gutter
 call s:h("GitGutterAdd",          {"bg": s:bg, "fg": s:diff_add})
