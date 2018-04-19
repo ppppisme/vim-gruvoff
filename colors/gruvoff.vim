@@ -122,7 +122,7 @@ call s:h("Underlined",            {"fg": s:fg, "gui": "underline", "cterm": "und
 
 call s:h("Ignore",                {"fg": s:bg_subtle})
 
-call s:h("Error",                 {"fg": s:fg, "bg": s:error, "cterm": "bold", "gui": "bold"})
+call s:h("Error",                 {"fg": s:bg_subtle, "bg": s:error, "cterm": "bold", "gui": "bold"})
 call s:h("Todo",                  {"fg": s:fg, "gui": "bold", "cterm": "bold"})
 
 call s:h("NonText",               {"fg": s:bg_subtle, "gui": "bold", "cterm": "bold"})
@@ -193,6 +193,9 @@ call s:h("htmlH3",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui
 call s:h("htmlH4",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
 call s:h("htmlH5",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
 call s:h("htmlH6",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
+
+call s:h("SpellBad",              {"bg": s:error, "fg": s:bg_subtle, "cterm": "bold", "gui": "bold"})
+call s:h("SpellCap",              {"bg": s:warning, "fg": s:bg_subtle, "cterm": "bold", "gui": "bold"})
 
 " git-gutter
 call s:h("GitGutterAdd",          {"bg": s:bg, "fg": s:diff_add})
