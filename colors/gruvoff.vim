@@ -128,8 +128,8 @@ call s:h("Todo",                  {"fg": s:fg, "gui": "bold", "cterm": "bold"})
 call s:h("NonText",               {"fg": s:bg_subtle, "gui": "bold", "cterm": "bold"})
 call s:h("Directory",             {"fg": s:fg_subtle, "cterm": "bold"})
 
-call s:h("IncSearch",             {"bg": s:bg_subtle})
-call s:h("Search",                {"bg": s:bg_subtle, "fg": s:fg})
+call s:h("IncSearch",             {"bg": s:fg_subtle, "fg": s:bg_subtle})
+call s:h("Search",                {"bg": s:bg_subtle, "fg": s:fg_subtle, "cterm": "bold", "gui": "bold"})
 
 call s:h("SpecialKey",            {"fg": s:fg_subtle, "gui": "italic", "cterm": "italic"})
 call s:h("MoreMsg",               {"fg": s:fg_subtle, "cterm": "bold", "gui": "bold"})
@@ -147,8 +147,8 @@ call s:h("VertSplit",             {"bg": s:bg_subtle, "fg": s:bg_subtle})
 
 call s:h("Title",                 {"fg": s:accent})
 
-call s:h("Visual",                {"bg": s:bg_subtle})
-call s:h("VisualNOS",             {"bg": s:bg_subtle})
+call s:h("Visual",                {"bg": s:fg_subtle, "fg": s:bg_subtle})
+call s:h("VisualNOS",             {"bg": s:fg_subtle, "fg": s:bg_subtle})
 
 call s:h("Question",              {"fg": s:fg_subtle, "cterm": "italic", "gui": "italic"})
 call s:h("ErrorMsg",              {"fg": s:error})
