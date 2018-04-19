@@ -198,7 +198,7 @@ call s:h("SpellBad",              {"bg": s:error, "fg": s:bg_subtle, "cterm": "b
 call s:h("SpellCap",              {"bg": s:warning, "fg": s:bg_subtle, "cterm": "bold", "gui": "bold"})
 
 " git-gutter
-call s:h("GitGutterAdd",          {"bg": s:bg, "fg": s:diff_add})
-call s:h("GitGutterDelete",       {"bg": s:bg, "fg": s:diff_remove})
-call s:h("GitGutterChange",       {"bg": s:bg, "fg": s:diff_change})
-call s:h("GitGutterChangeDelete", {"bg": s:bg, "fg": s:diff_change})
+hi link GitGutterAdd              DiffAdd
+hi link GitGutterDelete           DiffDelete
+hi link GitGutterChange           DiffChange
+hi link GitGutterChangeDelete     DiffChange
