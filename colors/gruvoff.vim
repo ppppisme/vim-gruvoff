@@ -39,7 +39,7 @@ let s:dark_cyan       = { "gui": "#689d6a", "cterm": "6"  }
 let s:light_cyan      = { "gui": "#8ec07c", "cterm": "14" }
 
 let s:white           = { "gui": "#ebdbb2", "cterm": "7" }
-let s:subtle_white    = { "gui": "#a8898d", "cterm": "15" }
+let s:subtle_white    = { "gui": "#bdae93", "cterm": "15" }
 
 if &background == "dark"
   let s:bg               = s:black
@@ -84,7 +84,7 @@ function! s:h(group, style)
 endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:fg})
-call s:h("Cursor",        {"bg": s:fg, "fg": s:fg })
+call s:h("Cursor",        {"bg": s:fg, "fg": s:bg })
 call s:h("Comment",       {"fg": s:fg_subtle, "cterm": "italic", "gui": "italic"})
 
 hi! link Constant         Normal
