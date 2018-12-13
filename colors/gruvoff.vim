@@ -187,6 +187,7 @@ call s:h("SignColumn",            {"fg": s:fg})
 hi link diffRemoved               DiffDelete
 hi link diffAdded                 DiffAdd
 
+call s:h("htmlTitle",             {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
 call s:h("htmlH1",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
 call s:h("htmlH2",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
 call s:h("htmlH3",                {"bg": s:bg, "fg": s:fg, "cterm": "bold", "gui": "bold"})
